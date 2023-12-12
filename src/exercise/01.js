@@ -8,9 +8,11 @@ export default function Home() {
     ✅ move the useEffect code into your useDocumentTitle function
    then, call the useDocumentTitle hook in your component
   */
+ function useDocumentTitle(title) {
   useEffect(() => {
     document.title = "Welcome to the home page!";
   }, []);
+}
 
   return (
     <div>
@@ -21,4 +23,4 @@ export default function Home() {
       </p>
     </div>
   );
-}
+  }
